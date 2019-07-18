@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Notice_Period</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( Is_on_Notice_Period__c = true,  ISBLANK( Resignation_Date__c ),NULL)</errorConditionFormula>
+    <errorDisplayField>Resignation_Date__c</errorDisplayField>
+    <errorMessage>Resignation Date Cannot be blanked.</errorMessage>
+</ValidationRule>

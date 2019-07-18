@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Emp_Age_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR( Age__c &gt; 30 ,  Age__c &lt; 21 )</errorConditionFormula>
+    <errorMessage>Age should be between 21-30</errorMessage>
+</ValidationRule>
